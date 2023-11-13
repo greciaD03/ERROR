@@ -12,7 +12,7 @@ class ErrorController extends AbstractController
     public function index(): Response
     {
         return $this->render('error/index.html.twig', [
-            'controller_name' => 'Se ha localizado un ERROR[  ]',
+            'page_error' => 'ERROR: [404]',
         ]);
     }
 }
