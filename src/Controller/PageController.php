@@ -11,11 +11,11 @@ class PageController extends AbstractController
     #[Route('/page/{id}', name: 'app_page')]
     public function index(int $id): Response
     {
-        if ($id == 10){
+        if (is_int($id)){
             return $this->render('page/index.html.twig', [
                 'page' => 'pagina es: ' .$id,
             ]);
-        }else{
+        }else {
             return $this->redirectToRoute('app_error');
         } 
     }
