@@ -16,3 +16,5 @@ class HostController extends AbstractController
         ]);
     }
 }
+
+//https://github.com/symfony/flex/issues/484
