@@ -9,11 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class PageController extends AbstractController
 {
     #[Route('/page/{id}', name: 'app_page')]
-    public function index(int $id): Response
+    public function index(string $id): Response
     {
-        if (is_int($id)){
+        if (ctype_digit($id)){
+            $id = (int)$id;
             return $this->render('page/index.html.twig', [
-                'page' => 'pagina es: ' .$id,
+                'page' => 'página: ' .$id,
             ]);
         }else {
             return $this->redirectToRoute('app_error');

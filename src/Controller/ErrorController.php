@@ -12,7 +12,8 @@ class ErrorController extends AbstractController
     public function index(): Response
     {
         return $this->render('error/index.html.twig', [
-            'page_error' => 'ERROR: [404]',
+            'page_error' => 'ERROR: [502]',
+            'context' => 'El accesso al sitio web es incorrecto, verifique el enlace de la pagina',
         ]);
     }
 }
