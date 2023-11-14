@@ -20,4 +20,25 @@ class PageController extends AbstractController
             return $this->redirectToRoute('app_error');
         } 
     }
+
+    #[Route('/page/10', name: 'app_photo1')]
+    public function photo1(): Response
+    {
+            return $this->render('page/index.html.twig', [
+            ]);
+    }
+
+    #[Route('/page/20', name: 'app_photo2')]
+    public function photo2(): Response
+    {
+            return $this->render('page/index.html.twig', [
+            ]);
+    }
+
+    #[Route('/page/30', name: 'app_photo3')]
+    public function photo3(): Response
+    {
+            return $this->render('page/index.html.twig', [
+            ]);
+    }
 }

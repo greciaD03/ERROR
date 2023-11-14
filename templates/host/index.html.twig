@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HostController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1> ¡{{host}}! 🌎✨</h1>
+
+    Paginas de WEB's:
+    <ul>
+        <li><a href="/page/10">Page.10</a></code></li>
+        <li><a href="/page/20">Page.20</a></code></li>
+        <li><a href="/page/30">Page.30</a></code></li>
+    </ul>
+</div>
+{% endblock %}
