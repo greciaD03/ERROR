@@ -13,7 +13,7 @@ class ErrorController extends AbstractController
     {
         return $this->render('error/index.html.twig', [
             'page_error' => 'ERROR: [404]',
-            'context' => 'Esta pagina no se encuentra disponible en estos momentos.',
+            'context' => 'Esta pagina no se encuentra disponible en estos momentos. Se ha encontrado fallas en la ruta, revise su guia correcta.',
         ]);
     }
 }

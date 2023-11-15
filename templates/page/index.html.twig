@@ -1,22 +1,31 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}🟩Correcto!{% endblock %}
+{% block title %}🌊Page!{% endblock %}
 
 {% block body %}
 <style>
+    body{
+        background-image: url("https://i.pinimg.com/564x/6d/b6/35/6db6353f0ce3e07de89d88926a3e9867.jpg");
+        color: #0099CC;
+    }
+    a{
+        color: #0099CC;
+        border: 2px solid #0099CC;
+        -webkit-text-stroke-width: 1px;
+    }
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div class="example-wrapper">
+    <img src="https://i.pinimg.com/236x/e8/9e/aa/e89eaa5570472edfa2221f9fbd2347cf.jpg"
+        alt="🐈" width="200" height="210" align="right"/>
     <h1>Estás en la {{page}} 📁</h1>
 
     🔎 Sus PARAMETROS:
     <ul>
         <li>Controller: ⚙️ <code><a href="{{ 'C:/xampp/htdocs/WEB/ERROR/src/Controller/PageController.php'|file_link(0) }}">src/Controller/PageController.php</a></code></li>
         <li>Template: ⛓️ <code><a href="{{ 'C:/xampp/htdocs/WEB/ERROR/templates/page/index.html.twig'|file_link(0) }}">templates/page/index.html.twig</a></code></li>
-        <img src="https://i.pinimg.com/564x/02/b3/ab/02b3ab559d60f9431390340799ab19af.jpg"
-        alt="🐈" width="200" height="210" align="center"/>
     </ul>
 
     <a href="/host" class="boton">[Regresar]</a>
