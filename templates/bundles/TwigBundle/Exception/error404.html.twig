@@ -1,0 +1,11 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Page not found</h1>
+
+    <p>
+        No se pudo ubicar la página solicitada. Pagar por cualquier URL
+        falta de ortografía o <a href="{{ path('app_host') }}">volver a la página de inicio</a>.
+    </p>
+{% endblock %}
